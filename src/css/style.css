@@ -1,0 +1,94 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../image/bg-repeat.jpg);
+    background-size: contain;
+    height: 100vh;
+    
+}
+.conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.texto{
+    color: #FFFFFF;
+    
+}
+.texto h2{
+    font-weight: 900;
+    font-size: 24px;
+}
+.texto p{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    margin-top: 11px;
+    width: 300px;
+}
+.card-formulario{
+    width: 340px;
+    height: 378px;
+    background-color: #FFFFFF;
+}
+#formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+#formulario input,
+#formulario textarea{
+    width: 300px;
+    border: 1.8px solid black;
+    padding: 7px;
+    border-radius: 5px;
+}
+#formulario textarea{
+    height: 100px;
+    resize: none;
+}
+.obrigatorio{
+    width: 90%;
+    font-size: 15px;
+}
+#formulario .btn{
+    border: none;
+    color: #FFFFFF;
+    background-color: #3CCC87;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+#formulario .btn:hover{
+    background-color: rgb(103, 74, 244);
+}
+#formulario .camp-obrigatorio{
+    color: red;
+    font-size: 8px;
+    width: 85%;
+    margin-bottom:5px;
+    opacity: 0;
+}
+/*Não preenchido*/
+#formulario .camp-obrigatorio.camp-invalid {
+    opacity: 1;
+    color: red;
+    font-size: 8px;
+    width: 85%;
+    margin-bottom:5px;
+    
+}
+#formulario .camp-obrigatorio.camp-invalid:last-child {
+    margin-bottom: 0;
+}
+#formulario .camp.invalid {
+    border: 2px solid red;
+}
+/*Preenchido*/
+#formulario .camp.valid{
+    border: 2px solid green;
+}
